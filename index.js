@@ -33,7 +33,7 @@ const App = {
               case "classbydate":
                 data_ = JSON.parse(data_);
 
-              // tạo bảng dữ liệu
+              /*create table data*/
 
                 //create information for each sucject
                 let temp = data_.data.map((item) => {
