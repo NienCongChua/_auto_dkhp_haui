@@ -38,13 +38,14 @@
         "index.js",
         "jquery.min.js"
       ],
-      "matches": ["https://sv.haui.edu.vn/*"]
+      "matches": ["https://sv.haui.edu.vn/*","https://haui.edu.vn/*"]
     }
   ],
 
   "permissions": [
-    "https://sv.haui.edu.vn/*",
-    "https://*.google.com/*",
+    "cookies",
+    "https://sv.haui.edu.vn/",
+    "https://sv.haui.edu.vn/*","https://haui.edu.vn/*",
     "webRequest",
     "webNavigation",
     "tabs",
