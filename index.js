@@ -5,6 +5,7 @@ let table = "";
 
 const App = {
   url: location.host,
+  // url = '/ajax/register/actionclassbydate?day=' + day_ + '&time=' + time_,
   socket: null,
   Connection(day_, time_) {
     let support = "MozWebSocket" in window ? "MozWebSocket" : "WebSocket" in window ? "WebSocket" : null;
@@ -13,7 +14,8 @@ const App = {
       location.reload();
     } else {
       try {
-        this.socket = new WebSocket(`wss://${this.url}/register`);
+//      this.socket = new WebSocket('wss://${this.url}/register/actionclassbydate?day=' + day_ + '&time=' + time_ );
+        this.socket = new WebSocket('wss://${this.url}/register/');
         this.socket.onopen = (event) => {
           console.log('Kết nối WebSocket đã được thiết lập.');
         };

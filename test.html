@@ -1,0 +1,919 @@
+
+
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="apple-itunes-app" content="app-id=1469388309">
+	<meta name="google-play-app" content="app-id=com.dhcn.MyHAUI">
+    <link rel="shortcut icon" href="https://cdn-001.haui.edu.vn//img/logo-haui-32x32.png">
+    <title>Đại học công nghiệp Hà Nội - Cổng thông tin điện tử</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn-001.haui.edu.vn//lib/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-001.haui.edu.vn//lib/material-design-icons/css/material-design-iconic-font.min.css" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://cdn-001.haui.edu.vn//lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn-001.haui.edu.vn//vnkresource/css/flaticon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-001.haui.edu.vn//lib/datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-001.haui.edu.vn//lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn-001.haui.edu.vn//css/style.css" type="text/css" />
+    <link href="https://cdn-001.haui.edu.vn//css/kstyle.css" rel="stylesheet" />
+
+    <script src="https://cdn-001.haui.edu.vn//lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn-001.haui.edu.vn//lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn-001.haui.edu.vn//lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="https://cdn-001.haui.edu.vn//js/snowfall.jquery.min.js" type="text/javascript"></script>
+	
+
+    <script type="text/javascript">
+    var kroot = '/';
+    var kverify = 'B46B00AF535E062784F974F69471293A';
+    var kWebsiteUrl = 'http://localhost:52690';
+    </script>
+
+	
+</head>
+<body>
+    <div class="be-wrapper be-fixed-sidebar">
+        
+<nav class="navbar navbar-default navbar-fixed-top be-top-header">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand"></a>
+        </div>
+        <div class="be-right-navbar">
+            <ul class="nav navbar-nav navbar-right be-user-nav">
+                <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                    
+                    <span class="user-name">Nguyễn Mạnh Niên</span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li>
+                            <div class="user-info">
+                                <div class="user-name">Nguyễn Mạnh Niên</div>
+                                
+                            </div>
+                        </li>
+                        <li><a href="/member/profiles"><span class="icon mdi mdi-face"></span>Account</a></li>
+                        <li><a href="#"><span class="icon mdi mdi-settings"></span>Settings</a></li>
+                        <li>
+                            <a href="/logout/B46B00AF535E062784F974F69471293A"><span class="icon mdi mdi-power"></span>Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="page-title"><span>Cổng thông tin Sinh viên</span>
+			
+        </div>
+    </div>
+</nav>
+
+
+
+        
+<div class="be-left-sidebar">
+    <div class="left-sidebar-wrapper">
+        <a href="#" class="left-sidebar-toggle">HỆ THỐNG QUẢN LÝ ĐẠI HỌC - QMC_e.Uni</a>
+        <div class="left-sidebar-spacer">
+            <div class="left-sidebar-scroll">
+                <div class="left-sidebar-content">
+                    
+                    <ul class="sidebar-elements">
+                        <li class="divider">TÀI KHOẢN SINH VIÊN</li>
+                        <li><a href="/"><i class="icon mdi mdi-home"></i><span>Trang chủ</span></a></li>
+                        
+                        <li class="parent"><a href="#"><i class="fa fa-book icon"></i><span>Tiện ích</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/student/application/notifilist"><span>Thông báo từ nhà trường</span></a></li>
+                                <li><a href="/student/application/messengeruserlist"><span>Thông báo cá nhân</span></a></li>
+                                <li><a href="/student/recharge/serviceonegate"><span>Dịch vụ một cửa</span></a></li>
+                                <li><a href="/STSV2023/index.html" target="_blank"><span>Sổ tay sinh viên</span></a></li>
+                                <li><a href="/student/application/sotayantoan"><span>Sổ tay an toàn</span></a></li>
+                                <li><a href="https://itc.haui.edu.vn/vn/ung-dung" target="_blank">HDSD phần mềm, ứng dụng</a></li>
+                                <li><a href="https://itc.haui.edu.vn/vn/khai-thac-ha-tang" target="_blank">HD khai thác hạ tầng mạng</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="parent"><a href="#"><i class="fa flaticon-live2 icon"></i><span>Chia sẻ thông tin</span></a>
+                            <ul>
+                                <li><a href="/messages">Chia sẻ trong lớp</a></li>
+                                <li><a href="/messages/group">Chia sẻ với nhà trường</a></li>
+                                <li><a href="/messages/listclass">Trao đổi thông tin lớp học phần</a></li>
+                            </ul>
+                        </li>
+
+                        
+                                 <li class="parent"><a href="#"><i class="fa flaticon-student40 icon"></i><span>Hỗ trợ việc làm </span></a><ul class="sub-menu"><li><a href=/student/application/advertiselist?t=1><span>Tuyển dụng </span></a></li><li><a href=/student/application/advertiselist?t=2><span>Hội thảo việc làm </span></a></li><li><a href=/student/application/advertiselist?t=3><span>Đào tạo tuyển dụng </span></a></li><li><a href=/student/application/advertiselist?t=4><span>Tham quan doanh nghiệp </span></a></li><li><a href=/student/application/advertiselist?t=5><span>Thực tập doanh nghiệp </span></a></li><li><a href=/student/application/advertiselist?t=6><span>Trải nghiệm thực tế </span></a></li><li><a href=/student/application/advertiselist?t=7><span>Tài trợ học bổng </span></a></li></ul></li>
+                            
+
+                        <li class="parent"><a href="#"><i class="fa flaticon-boy31 icon"></i><span>Thông tin cá nhân</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/student/userdetail/userdetail" id="sub_userdetail"><span class="imgwrap"></span><span class="linkwrap">Cập nhật thông tin sinh viên</span></a></li>
+                                <li><a href="/student/userdetail/usercerupdate" id="sub_usercerupdate"><span class="imgwrap"></span><span class="linkwrap">Cập nhật thông tin in bằng</span></a></li>
+                                
+                                <li><a href="/member/changepass" id="sub_changepass"><span class="imgwrap"></span><span class="linkwrap">Đổi mật khẩu</span></a></li>
+                                <li><a href="/student/userdetail/userrevenueslist" id="sub_userrevenueslist"><span class="imgwrap"></span><span class="linkwrap">DS giấy tờ hồ sơ</span></a></li>
+                                <li><a href="/student/userdetail/militaryclothes" id="sub_militaryclothes"><span class="imgwrap"></span><span class="linkwrap">ĐK Quân tư trang</span></a></li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="parent"><a href="#"><i class="icon mdi mdi-money-box"></i><span>Theo dõi giao dịch</span></a>
+                            <ul>
+                                <li><a href="/student/recharge/cashinqr" id="sub_cashinqr" style="color: red;"><span class="imgwrap"></span><span class="linkwrap">Nạp tiền QR code</span></a></li>
+                                <li><a href="/student/recharge/cashin" id="sub_cashin"><span class="imgwrap"></span><span class="linkwrap">Nạp tiền vào tài khoản</span></a></li>
+                                <li><a href="/student/recharge/inpatientpayment" id="sub_inpatientpayment"><span class="imgwrap"></span><span class="linkwrap">Thanh toán công nợ</span></a></li>
+                                <li><a href="/student/recharge/transactionhistory" id="sub_transactionhistory"><span class="imgwrap"></span><span class="linkwrap">Lịch sử giao dịch</span></a></li>
+                                <li><a href="/student/recharge/listeinvoice" id="sub_listeinvoice"><span class="imgwrap"></span><span class="linkwrap">In hóa đơn điện tử</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href="#"><i class="icon mdi mdi-book"></i><span>Chương trình đào tạo</span></a>
+                            <ul>
+                                <li><a href="/training/viewcourseindustry" id="sub_viewcourseindustry"><span class="imgwrap"></span><span class="linkwrap">Khung chương trình</span></a></li>
+                                <li><a href="/training/programmodulessemester" id="sub_viewcourseindustry1"><span class="imgwrap"></span><span class="linkwrap">Khung theo kỳ</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/register/dangkyhocphan" id="sub_preorder" style="color: red;"><i class="icon mdi mdi-calendar-note"></i><span>ĐK HP dự kiến</span></a></li>
+                        <li class="parent"><a href="#"><i class="fa flaticon-key105 icon"></i><span>Đăng ký học phần</span></a>
+                            <ul>
+                                <li><a href="/register/" id="sub_register"><span class="imgwrap"></span><span class="linkwrap">Đăng ký học phần</span></a></li>
+                                <li><a href="/training/removeclasslist" id="sub_removeclasslist"><span class="imgwrap"></span><span class="linkwrap">Rút học phần</span></a></li>
+                                <li><a href="/training/statisticregister" id="sub_statisticregister"><span class="imgwrap"></span><span class="linkwrap">Thông tin đăng ký học phần</span></a></li>
+                                <li><a href="/training/viewprogram" id="sub_viewprogram"><span class="imgwrap"></span><span class="linkwrap">Đăng ký học CT2</span></a></li>
+                                <li><a href="/training/listprogramtwo" id="sub_viewprogramtwo"><span class="imgwrap"></span><span class="linkwrap">DS đơn đăng ký học CT2</span></a></li>
+                                <li><a href="/training/viewmodules2" id="sub_viewmodules2"><span class="imgwrap"></span><span class="linkwrap">Kiểm tra tiến độ CT2</span></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="parent"><a href="#"><i class="fa flaticon-key105 icon"></i><span>ĐK học trước thạc sĩ</span></a>
+    <ul>
+        <li><a href="/training/viewprogramsdh" id="sub_viewprogramsdh"><span class="imgwrap"></span><span class="linkwrap">ĐK học trước HP thạc sĩ</span></a></li>
+        <li><a href="/training/listprogramsdh" id="sub_listprogramsdh"><span class="imgwrap"></span><span class="linkwrap">DS đơn đăng ký</span></a></li>
+        <li><a href="/training/viewmodulessdh" id="sub_viewmodulessdh"><span class="imgwrap"></span><span class="linkwrap">Kiểm tra tiến độ</span></a></li>
+        <li><a href="/registersdh/onlineregister" id="sub_onlineregister"><span class="imgwrap"></span><span class="linkwrap">Đăng ký học phần</span></a></li>
+
+    </ul>
+    
+
+</li>
+                        <li class="parent"><a href="#"><i class="icon mdi mdi-alarm-check"></i><span>Thời khóa biểu</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/timestable/calendarct"><span>KH học tập đầu khóa</span></a></li>
+                                <li><a href="/timestable/calendarcl" id="sub_calendarcl"><span class="imgwrap"></span><span class="linkwrap">Thời khóa biểu</span></a></li>
+                                <li><a href="/timestable/timestableview" id="sub_timestableview"><span class="imgwrap"></span><span class="linkwrap">Xem lịch giảng dạy</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><a href="#"><i class="fa flaticon-calendar130 icon"></i><span>Theo dõi lịch thi</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/student/schedulefees/examplant" id="sub_examplant"><span class="imgwrap"></span><span class="linkwrap">Kế hoạch thi </span></a></li>
+                                <li><a href="/student/schedulefees/transactionmodules" id="sub_transactionmodules"><span class="imgwrap"></span><span class="linkwrap">Lịch thi</span></a></li>
+                                <li><a href="https://tracnghiem.haui.edu.vn/login/index.php?u=2022601951&p=67BE3682-7277-400D-8FAB-AA3A523A299E" id="sub_shcd"><span class="imgwrap"></span><span class="linkwrap">Đánh giá tuần SHCD</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/study"><i class="fa flaticon-science1 icon"></i><span>Học trực tuyến</span></a></li>
+                        <li><a href="/sso/qpan"><i class="fa flaticon-student40 icon"></i><span>Giáo dục QP&AN Online</span></a></li>
+
+                        
+
+
+                        <li><a href="/student/schedulefees/testonline" id="sub_testonline"><i class="fa flaticon-basic2 icon"></i><span>Thi Online</span></a></li>
+
+
+                        <li><a href="/student/schedulefees/testonlineqpan" id="sub_testonlineqpan"><i class="icon mdi mdi-balance-wallet"></i><span class="linkwrap">Thi GD QP&AN Online</span></a></li>
+                        <li><a href="/student/schedulefees/dakltnonline" id="sub_dakltnonline"><i class="icon mdi mdi-group"></i><span class="linkwrap">Bảo vệ ĐAKLTN Online</span></a></li>
+                        <li class="parent"><a href="#"><i class="fa flaticon-a10 icon"></i><span>Theo dõi KQ học tập</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/student/result/studyresults" id="sub_studyresults"><span class="imgwrap"></span><span class="linkwrap">Kết quả học tập</span></a></li>
+                                <li><a href="/student/result/examresult" id="sub_examresult"><span class="imgwrap"></span><span class="linkwrap">Kết quả thi</span></a></li>
+                                <li><a href="/student/result/sendreceiveapplications" id="sub_sendreceiveapplications"><span class="imgwrap"></span><span class="linkwrap">Nộp đơn phúc tra</span></a></li>
+                                <li><a href="/student/result/sendexamreview" id="sub_sendexamreview"><span class="imgwrap"></span><span class="linkwrap">Đăng ký xem lại bài</span></a></li>
+                                <li><a href="/student/result/viewscorebysemester" id="sub_viewscorebysemester"><span class="imgwrap"></span><span class="linkwrap">Trung bình chung học kỳ</span></a></li>
+                                <li><a href="/student/result/viewmodules" id="sub_viewmodules"><span class="imgwrap"></span><span class="linkwrap">Trung bình chung tích lũy</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/tttn/htdn/list"><i class="fa flaticon-person277 icon"></i><span>Thực tập tốt nghiệp</span></a>
+                        </li>
+                        <li><a href="/student/result/graduatecal" id="sub_graduatecal"><i class="icon mdi mdi-folder-star-alt"></i><span class="imgwrap"></span><span class="linkwrap">Xét tốt nghiệp</span></a></li>
+
+                        <li class="parent"><a href="#"><i class="fa flaticon-a10 icon"></i><span>Thông tin in bằng</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="/student/result/degreeview" id="sub_degreeview"><i class="icon mdi mdi-folder-star-alt"></i><span class="imgwrap"></span><span class="linkwrap">Thông tin in bằng</span></a></li>
+                                <li><a href="/student/result/degreeprint" id="sub_degreeprint"><i class="icon mdi mdi-folder-star-alt"></i><span class="imgwrap"></span><span class="linkwrap">Bản in</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/student/evaluation/listsemester"><i class="fa flaticon-person277 icon"></i><span>Đánh giá rèn luyện</span></a>
+                        </li>
+                        
+                        <li><a href="/sso/btl"><i class="fa flaticon-academic icon"></i><span>Kiểm tra luận văn</span></a>
+                        <li><a href="/survey"><i class="fa flaticon-questions icon"></i><span>Khảo sát</span></a></li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        <div class="be-content">
+            <div class="main-content container-fluid">
+                <form name="frmMain" method="post" action="/register/" id="frmMain" data-toggle="validator" role="form">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+                    
+<script type="text/javascript">
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/{(\d+)}/g, function (match, number) {
+            return typeof args[number] != 'undefined'
+                ? args[number]
+                : match
+                ;
+        });
+    };
+
+    var current = '0';
+    function setTab(id) {
+        if (current == id)
+            return;
+        else {
+            addClassName(document.getElementById('tab' + id), 'active', true);
+            removeClassName(document.getElementById('tab' + current), 'active');
+            document.getElementById('tab' + id + '_data').style.display = '';
+            document.getElementById('tab' + current + '_data').style.display = 'none';
+            current = id;
+        }
+    }
+</script>
+
+<div class="panel panel-default panel-border-color panel-border-color-primary">
+    <div class="k-panel-tl">
+        <div class="k-panel-tr">
+            <div class="k-panel-tc">
+                <div class="panel-heading panel-heading-divider">
+                    <span class="k-panel-header-text">Đăng ký học phần</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="height">
+    </div>
+    <div class="k-panel-bwrap">
+        <div class="k-panel-ml">
+            <div class="k-panel-mr">
+                <div class="panel-body">
+                    
+        <table>
+            <tr>
+                <td>
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td>Họ và tên sinh viên:
+                            </td>
+                            <td>
+                                <strong>
+                                    Nguyễn Mạnh Niên
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mã sinh viên:
+                            </td>
+                            <td>
+                                <strong>
+                                    2022601951
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lớp:
+                            </td>
+                            <td>
+                                <strong>
+                                    2022DHKHMT01</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 100px;"></td>
+                <td>
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td>
+                                <strong>Tổng tín chỉ tích lũy: </strong>
+                            </td>
+                            <td>
+                                <strong class="red">76.0</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Điểm trung bình chung tích lũy: </strong></td>
+                            <td><strong class="red">2.93</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Xếp hạng: </strong></td>
+                            <td><strong class="red">Khá</strong></td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 100px;"></td>
+                <td id="reginfo">
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td>Số tiền trong tài khoản: </td>
+                            <td><strong class="red">0</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Số tiền còn nợ: </td>
+                            <td><strong class="red">10,575,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Trạng thái: </td>
+                            <td><span id="messages" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+
+
+                    <div class="alert alert-danger " role="alert">
+                        <h3 class="text-center" style="font-weight: bold">Vui lòng không tải lại trang, sử dụng nhiều trình duyệt và cửa sổ trong quá trình đăng ký.</h3>
+                        <h3 class="text-center" style="font-weight: bold">Hệ thống sẽ tự động cập nhật học phần được phép đăng ký, kết quả đơn đăng ký và thời khóa biểu</h3>
+                        <h3 class="text-center" style="font-weight: bold">Số thứ tự đăng ký chỉ mang tính chất tham khảo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="k-panel-mr">
+                <div class="panel-body">
+                    <div class="row table-responsive">
+                        <table class="table table-bordered table-striped" id="tablecalendar">
+                        </table>
+                    </div>
+
+                    <div class="row table-responsive">
+                        <p class="text-center" style="font-size: 24px;">Danh sách đơn đăng ký/hủy đăng ký</p>
+                        <table class="table table-bordered table-striped" id="tableorder">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>D/H</th>
+                                    <th>Học phần</th>
+                                    <th>Mã học phần</th>
+                                    <th>Mã lớp</th>
+                                    <th>Tên lớp</th>
+                                    <th>Thời gian</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ghi chú</th>
+                                    <th>Số thứ tự ĐK</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    <i>(Ghi chú: Học phần đánh dấu * được công nhận tương đương hoặc thay thế với học phần trước đó)</i>
+</p>
+<div class="panel panel-default">
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+    </div>
+    <div class="tab-container">
+        <ul class="nav nav-tabs">
+            <li id="tab0" class="active"><a href="#tab0_data" data-toggle="tab" aria-expanded="true">Chương trình 1</a></li>
+            <li id="tab1"><a href="#tab1_data" data-toggle="tab" aria-expanded="true">Chương trình 2</a></li>
+            <li id="tab2"><a href="#tab2_data" data-toggle="tab" aria-expanded="true">Ngoài khung</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab0_data" class="table-responsive tab-pane cont active">
+                <table class="table table-bordered table-striped" id="table1">
+                    <thead>
+                        <tr class="k-table-head">
+                            <th>STT</th>
+                            <th>Mã học phần</th>
+                            <th>Tên học phần</th>
+                            <th>TC Lý thuyết</th>
+                            <th>TC Thực hành</th>
+                            <th>TC BTL/TT</th>
+                            <th>TC Online</th>
+                            <th>Tổng số TC</th>
+                            <th>HK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                                <tr class="k-table-head">
+                                    <td>1</td>
+                                    <td>FL6343</td>
+                                    <td>
+                                        <a class="a-modules_7048_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=7048&ct=866', 99, 70, 0, 1)">Tiếng Anh Công nghệ thông tin 1</a>
+                                    </td>
+                                    <td>5.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>5.0</td>
+                                    <td>5</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>2</td>
+                                    <td>IT6084</td>
+                                    <td>
+                                        <a class="a-modules_7183_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=7183&ct=866', 99, 70, 0, 1)">Kiểm thử phần mềm </a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>0.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>6</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>3</td>
+                                    <td>IT6066</td>
+                                    <td>
+                                        <a class="a-modules_7165_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=7165&ct=866', 99, 70, 0, 1)">Phân tích thiết kế phần mềm</a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>0.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>5</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>4</td>
+                                    <td>IT6069</td>
+                                    <td>
+                                        <a class="a-modules_7168_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=7168&ct=866', 99, 70, 0, 1)">Tính toán hiệu năng cao</a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>5</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>5</td>
+                                    <td>IT6044</td>
+                                    <td>
+                                        <a class="a-modules_4804_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=4804&ct=866', 99, 70, 0, 1)">Ứng dụng thuật toán</a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>5</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>6</td>
+                                    <td>IT6079</td>
+                                    <td>
+                                        <a class="a-modules_7178_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=7178&ct=866', 99, 70, 0, 1)">Deep Learning</a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>7</td>
+                                </tr>
+                            
+                                <tr class="k-table-head">
+                                    <td>7</td>
+                                    <td>IT6029</td>
+                                    <td>
+                                        <a class="a-modules_4789_866" href="javascript: void (0)" onclick="kPortal.OpenDialog('/ajax/register/actionclassbymodules?fid=4789&ct=866', 99, 70, 0, 1)">Phát triển ứng dụng trên thiết bị di động</a>
+                                    </td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>3.0</td>
+                                    <td>6</td>
+                                </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
+            <div id="tab1_data" class="table-responsive tab-pane cont">
+                <table class="table table-bordered table-striped" id="table2">
+                    <thead>
+
+                        <tr class="k-table-head">
+                            <th>STT</th>
+                            <th>Mã học phần</th>
+                            <th>Tên học phần</th>
+                            <th>TC Lý thuyết</th>
+                            <th>TC Thực hành</th>
+                            <th>TC BTL/TT</th>
+                            <th>TC Online</th>
+                            <th>Tổng số TC</th>
+                            <th>HK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div id="tab2_data" class="table-responsive tab-pane cont">
+                <table class="table table-bordered table-striped" id="table3">
+                    <thead>
+                        <tr class="k-table-head">
+                            <th>STT</th>
+                            <th>Mã học phần</th>
+                            <th>Tên học phần</th>
+                            <th>TC Lý thuyết</th>
+                            <th>TC Thực hành</th>
+                            <th>TC BTL/TT</th>
+                            <th>TC Online</th>
+                            <th>Tổng số TC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/template" id="ListOrderTemplate">
+    <tr>
+        <td>{0}</td>
+        <td>{7}</td>
+        <td>{1}</td>
+        <td>{8}</td>
+        <td>{2}</td>
+        <td>{3}</td>
+        <td>{4}</td>
+        <td class="reg-{9}">{5}</td>
+        <td class="reg-{9}">{6}</td>
+        <td>{9}</td>
+    </tr>
+</script>
+<script type="text/template" id="HocPhan">
+    <tr class="m-{1}">
+        <td>{0}</td>
+        <td>{2}</td>
+        <td class="modules_{1}_{10}">{3}</td>
+        <td>{4}</td>
+        <td>{5}</td>
+        <td>{6}</td>
+        <td>{7}</td>
+        <td>{8}</td>
+        <td>{9}</td>
+    </tr>
+</script>
+
+<script type="text/template" id="TuChon">
+    <tr>
+        <td colspan="9">
+            <strong>Nhóm tự chọn: {0} (Số tín chỉ tối thiểu phải học: {1})</strong>
+        </td>
+    </tr>
+</script>
+<script type="text/template" id="ThayThe">
+    <tr>
+        <td colspan="9">
+            <strong>Nhóm học phần Tương đương/Thay thế</strong>
+        </td>
+    </tr>
+</script>
+<script type="text/template" id="listclass">
+    <p class="viewclass class{5} classregis view-{5}-{7}-{8}">
+        {0}<br />
+        <strong>{1}</strong><br />
+        ({2})<br />
+        <strong>{3}</strong> ({4})<br />
+        <a href="javascript:void(0)" onclick="Cancel({5})" class="delete {6}"><i class="fa fa-times"></i></a>
+    </p>
+</script>
+
+<script type="text/template" id="listclass2">
+    <p class="viewclass class-{0} classregis view-{0}-{1}-{2}-{3}">
+        <span class="kcheck hide">{0}</span>
+        {4}<br />
+        <strong>{5}</strong><br />
+        (<span id="tkb-{0}-{1}-{2}-{3}">{6}</span>)<br />
+        <strong>{7}</strong> ({8})<br />
+        <a href="javascript:void(0)" onclick="Cancel({0})" class="delete {9}"><i class="fa fa-times"></i></a>
+    </p>
+</script>
+<script type="text/template" id="listdate">
+    <td id="listday{2}-{1}"></td>
+</script>
+<script type="text/template" id="listdatetop">
+    <thead>
+        <tr class="k-table-head">
+            <th style="width: 9%">Thời khóa biểu</th>
+            <th style="width: 13%">Thứ 2</th>
+            <th style="width: 13%">Thứ 3</th>
+            <th style="width: 13%">Thứ 4</th>
+            <th style="width: 13%">Thứ 5</th>
+            <th style="width: 13%">Thứ 6</th>
+            <th style="width: 13%">Thứ 7</th>
+            <th style="width: 13%">Chủ nhật</th>
+        </tr>
+    </thead>
+</script>
+<script type="text/template" id="tempreginfo">
+    <table class="table table-bordered table-striped">
+        <tbody>
+            <tr>
+                <td>Số tiền trong tài khoản: </td>
+                <td><strong class="red">{0}</strong></td>
+            </tr>
+            <tr>
+                <td>Số tiền có thể sử dụng:</td>
+                <td><strong class="red">{1}</strong></td>
+            </tr>
+            <tr>
+                <td>Số tín chỉ đã đăng ký:</td>
+                <td><strong class="red">{2}</strong> <span id="isSuccess">
+                    <input type="button" value="Hoàn thành" onclick="Success()" /></span></td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+<style>
+    .viewclass {
+        border: 1px solid #428bca;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        position: relative;
+    }
+
+        .viewclass a.delete {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: #ff0000;
+        }
+
+    .dangky1 {
+        background-color: #10df1e !important;
+    }
+
+    .dangky2 {
+        background-color: #ff0000 !important;
+    }
+
+    .reg-2 {
+        color: #10df1e;
+    }
+
+    .reg-3 {
+        color: #ff0000;
+    }
+
+    .reg-4 {
+        color: #10df1e;
+    }
+
+    .reg-5 {
+        color: #ff0000;
+    }
+
+    /* the norm */
+    #gritter-notice-wrapper {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 301px;
+        z-index: 9999;
+    }
+
+        #gritter-notice-wrapper.top-left {
+            left: 20px;
+            right: auto;
+        }
+
+        #gritter-notice-wrapper.bottom-right {
+            top: auto;
+            left: auto;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #gritter-notice-wrapper.bottom-left {
+            top: auto;
+            right: auto;
+            bottom: 20px;
+            left: 20px;
+        }
+
+    .gritter-item-wrapper {
+        position: relative;
+        margin: 0 0 10px 0;
+    }
+
+    .gritter-top {
+        height: 10px;
+    }
+
+    .hover .gritter-top {
+        background-position: right -30px;
+    }
+
+    .gritter-bottom {
+        height: 8px;
+        margin: 0;
+    }
+
+    .hover .gritter-bottom {
+        background-position: bottom right;
+    }
+
+    .gritter-item {
+        display: block;
+        color: #eee;
+        padding: 2px 11px 8px 11px;
+        font-size: 11px;
+        font-family: verdana;
+    }
+
+    .hover .gritter-item {
+        background-position: right -40px;
+    }
+
+    .gritter-item p {
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word;
+    }
+
+    .gritter-close {
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: 3px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999em;
+    }
+
+    .gritter-title {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 0 0 7px 0;
+        display: block;
+        text-shadow: 1px 1px 0 #000; /* Not supported by IE :( */
+    }
+
+    .gritter-image {
+        width: 48px;
+        height: 48px;
+        float: left;
+    }
+
+    .gritter-with-image,
+    .gritter-without-image {
+        padding: 0;
+    }
+
+    .gritter-with-image {
+        width: 220px;
+        float: right;
+    }
+    /* for the light (white) version of the gritter notice */
+    .gritter-light .gritter-item,
+    .gritter-light .gritter-bottom,
+    .gritter-light .gritter-top,
+    .gritter-light .gritter-close {
+        color: #222;
+    }
+
+    .gritter-light .gritter-title {
+        text-shadow: none;
+    }
+</style>
+<script src="/vnkResource/js/jquery.gritter.js"></script>
+<script src="/vnkResource/js/kWeb.Register2024-2.1.js"></script>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div class="panel panel-default panel-border-color panel-border-color-primary hide d-none">
+    <div class="panel-heading panel-heading-divider">
+        <span class="k-panel-header-text">Đăng ký học phần</span>
+    </div>
+    <div class="panel-body">
+	<div class="alert alert-danger " role="alert">
+					  <h3 class="text-center" style="font-weight: bold">Vui lòng không tải lại trang, sử dụng nhiều trình duyệt và cửa sổ trong quá trình đăng ký. Hệ thống sẽ tự động cập nhật học phần được phép đăng ký, kết quả đơn đăng ký và thời khóa biểu</h3>
+					</div>
+        Xin chào: <strong>Nguyễn Mạnh Niên</strong>
+        <div class="g-recaptcha" data-sitekey="6LdPnAUaAAAAABC-5dwvcjM0_RPdC9s3ldQlHmd8"></div>
+    </div>
+    <div class="panel-footer">
+        <input type="submit" name="ctl02$btnSubmit" value="Xác nhận vào đăng ký" id="ctl02_btnSubmit" class="btn btn-primary" />
+    </div>
+</div>
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="modal fade bs-example-modal-lg" id="kZoom">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" id="kbox"></div>
+        </div>
+    </div>
+    <script src="https://cdn-001.haui.edu.vn//js/kadmin.2.0.js"></script>
+    <script src="https://cdn-001.haui.edu.vn//lib/moment.js/min/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdn-001.haui.edu.vn//lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="https://cdn-001.haui.edu.vn//lib/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="https://cdn-001.haui.edu.vn//js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	
+	//$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/a.png",flakeCount : 10, minSize: 10, maxSize:20});
+	//$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/gs2.png", minSize: 10, maxSize:32});
+	
+	        //$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/cherry-blossom.png",flakeCount : 11, minSize: 10, maxSize:25});
+			
+			//$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/b.png", minSize: 10, maxSize:20});
+	        
+			//$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/gs3.png", minSize: 10, maxSize:20});
+	        //$(document).snowfall({image :"https://cdn-001.haui.edu.vn//img/gs/sakura.png",flakeCount : 10, minSize: 10, maxSize:32});
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            App.init();
+
+            var files = $('.sidebar-elements li a');
+            for (var i = 0; i < files.length; i++) {
+                if ($(files[i]).attr('href').toLowerCase() == location.pathname.toLowerCase() + location.search.toLowerCase()) {
+                    $(files[i]).parent().attr('class', 'active');
+                    var obj = $(files[i]).parent();
+                    var iparent = 0;
+                    while (iparent < 10) {
+                        if (obj.attr('class') == 'parent')
+                            obj.addClass('open');
+                        obj = obj.parent();
+                        iparent++;
+                    }
+                }
+            }
+        });
+    </script>
+	
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8WJEW3D2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S8WJEW3D2H');
+</script>
+
+  <div id="pdg"></div>
+  <div id="notification"></div>
+</body>
+</html>
