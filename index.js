@@ -34,6 +34,7 @@ const App = {
             switch (obj.msg) {
               case "skin":
                 App.socket.send(`classbydate:${day_}:${time_}`);
+                console.log('Socket was send!');
                 break;
               case "addclass":
                 location.reload();
@@ -98,6 +99,7 @@ const App = {
             }
           } else {
             alert(obj.data);
+            console.log('alert(obj.data)');
           }
         };
       } catch (err) {
