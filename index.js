@@ -14,11 +14,19 @@ const App = {
     } else {
       try {
         this.socket = new WebSocket(`wss://${this.url}/register`);
+        this.socket.onopen = (event) => {
+          console.log('Kết nối WebSocket đã được thiết lập.');
+        };
         this.socket.onmessage = evt => {
           data_ = evt.data;
           let obj = null;
           try {
             obj = jQuery.parseJSON(evt.data);
+            
+            // Insert log to know where is can to run
+            console.log('Lấy data thành công.');
+            console.log('----------------------------------');
+            console.log(data_);
           } catch (err) {
             obj.err = 1;
           }
@@ -37,9 +45,12 @@ const App = {
 
                 //create information for each sucject
                 let temp = data_.data.map((item) => {
+                  console.log('reate information for each sucject');
                   //create school days html
                   let address = item.lr.map((item) => {
+                    console.log('create school days html');
                     let item_1 = `<span>Thứ(${item.Day}), Tiết(${item.Time}), Phòng ${item.Room}</span><br/>`;
+                    console.log(item_1);
                     return item_1;
                   });
                   //end create school days html
@@ -50,6 +61,7 @@ const App = {
                                         <td>${item.ic}</td>
                                         <td><button name="${item.mn}" value=${item.ic} class="btn btn-primary choose">Đăng ký</button></td>
                                   </tr>`;
+                  console.log(item_2);
                   return item_2;
                 });
               //end create information for each sucject

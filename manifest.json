@@ -1,6 +1,6 @@
 {
     "name": "Đăng ký học phần HaUI",
-    "version": "1.0",
+    "version": "1.0.1",
     "manifest_version": 3,
     "description": "Tools to help register courses faster - HaUI",
     "icons": {
@@ -41,10 +41,8 @@
         "matches": ["https://sv.haui.edu.vn/*","https://haui.edu.vn/*"]
       }
     ],
-  
+    "permissions": ["tabs", "storage", "webRequest", "cookies", "background", "declarativeNetRequest", "webNavigation"],
     "host_permissions": [
-      "https://sv.haui.edu.vn/",
-      "https://sv.haui.edu.vn/*","https://haui.edu.vn/*"
-  ]
+      "https://sv.haui.edu.vn/*"]
   }
   
