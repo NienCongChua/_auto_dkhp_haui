@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        input { width: 100%; margin: 5px 0; padding: 5px; }
+        textarea { width: 100%; margin: 5px 0; padding: 5px; height: 80px; }
+        button { width: 100%; padding: 10px; margin-top: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <label for="token">Enter your token:</label>
+    <input type="text" id="token" placeholder="Enter your token" />
+    <label for="fid">Enter fid:</label>
+    <input type="number" id="fid" placeholder="Enter FID" />
+    <label for="cookies">Enter your cookies (key=value; key2=value2; ...):</label>
+    <textarea id="cookies" placeholder="Enter your cookies here"></textarea>
+    <button id="get-class">Get Class Info</button>
+    <hr>
+    <label for="class-id">IndependentClassID:</label>
+    <input type="number" id="class-id" placeholder="Enter Class ID" />
+    <button id="register">Register Class</button>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
